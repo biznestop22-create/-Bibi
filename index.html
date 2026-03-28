@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Messages</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #1a1a1a, #000);
+    color: white;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.online {
+    color: #00ff88;
+    margin: 10px 0;
+}
+
+.box {
+    background: #2a2a2a;
+    padding: 15px;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.timer {
+    color: #ff4d4d;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.button a {
+    display: block;
+    background: #ff0055;
+    padding: 16px;
+    border-radius: 12px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.footer {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #aaa;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>💌 You have new messages</h1>
+
+<div class="online">● Users online near you</div>
+
+<div class="box">
+Hey 👋<br><br>
+Someone just sent you a message.<br>
+Check it now before it disappears.
+</div>
+
+<div class="timer">
+Redirecting in <span id="count">5</span>s...
+</div>
+
+<div class="button">
+<a href="https://t.ajrkmx1.com/407347/6224/17111?bo=2779,2778,2777,2776,2775&po=6533&aff_sub5=SF_006OG000004lmDN">
+👉 I'm here
+</a>
+</div>
+
+<div class="footer">
+Fast access • No complicated steps • 18+
+</div>
+
+</div>
+
+<script>
+// таймер + автопереход
+let time = 5;
+let link = "https://t.ajrkmx1.com/407347/6224/17111?bo=2779,2778,2777,2776,2775&po=6533&aff_sub5=SF_006OG000004lmDN";
+
+let timer = setInterval(() => {
+    time--;
+    document.getElementById("count").innerText = time;
+
+    if (time <= 0) {
+        clearInterval(timer);
+        window.location.href = link;
+    }
+}, 1000);
+</script>
+
+</body>
+</html>
